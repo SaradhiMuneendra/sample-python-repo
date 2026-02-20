@@ -26,3 +26,22 @@ typing-inspection==0.4.2
 typing_extensions==3.10.0.2       # Older version
 urllib3==1.25.8                   # ⚠ Multiple CVEs (CRLF injection, DoS, etc.)
 uvicorn==0.11.8                   # ⚠ WebSocket DoS issues
+
+## New vulnerable pip modules
+# JWT handling
+python-jose==3.2.0            # ⚠ JWT verification weaknesses
+
+# Markdown rendering
+Markdown==3.2.1               # ⚠ XSS vulnerabilities
+
+# CLI parsing
+docutils==0.16                # ⚠ RST injection vulnerabilities
+
+# Packaging tools
+setuptools==44.0.0            # ⚠ Multiple older supply-chain CVEs
+
+# Database driver
+psycopg2==2.8.5               # ⚠ Memory handling CVEs
+
+# Websocket library
+websockets==8.1               # ⚠ DoS vulnerabilities
